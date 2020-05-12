@@ -1,0 +1,14 @@
+.header-container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.container-logo {
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.container-logo img {
+    width: 130%;
+}

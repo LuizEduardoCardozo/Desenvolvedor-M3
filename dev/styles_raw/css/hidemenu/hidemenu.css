@@ -1,0 +1,8 @@
+.hide-category ul li {
+    box-shadow: 0px 2px #CCC;
+}
+
+.category-selected {
+    background-color: #AAA;
+    box-shadow: 0px 2px #AAA;
+}

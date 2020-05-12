@@ -1,0 +1,26 @@
+.container-filters {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3rem;
+    padding-left: 30%;
+}
+
+.filters-container {
+    padding-bottom: 2rem;
+}
+
+.filters-container h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.filters-container a {
+    color: grey;
+}
+
+.container-filter-tam {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

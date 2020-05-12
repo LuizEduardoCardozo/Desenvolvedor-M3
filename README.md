@@ -10,3 +10,4 @@
 #### Luiz Eduardo Cardozo Pereira
 #### Meu email: [eduard.cardoz@gmail.com](mailto:eduard.cardoz@gmail.com)
 #### [Linkedin](https://www.linkedin.com/in/luizeduardocardozo/)
+

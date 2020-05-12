@@ -1,0 +1,19 @@
+.shop-bag-img {
+    height: 64px;
+    width: 64px;
+}
+.iten-counter {
+    display: block;
+    color: white;
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    float: right;
+    text-align: center;
+    margin-top: 1.5rem;
+    border-radius: 12px;
+    z-index: 1;
+    right: 30%;
+    top: 0.5rem;
+}

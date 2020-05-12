@@ -1,0 +1,14 @@
+.container-main {
+    width: 70%;
+    display:flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+}
+.container-ordenar {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 2rem;
+    margin-right: 10.5%;
+}

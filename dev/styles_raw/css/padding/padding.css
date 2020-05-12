@@ -1,0 +1,17 @@
+.px-8 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.py-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.pb-d5 {
+    padding-bottom: 0.5rem;
+}
+
+.p-2 {
+    padding: 2rem
+}

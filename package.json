@@ -1,0 +1,21 @@
+{
+  "name": "m3test",
+  "version": "1.0.0",
+  "description": "Ambiente",
+  "main": "gulpfile.js",
+  "scripts": {
+    "serve": "gulp serve",
+    "build": "gulp css && gulp imgOpt && gulp js"
+  },
+  "author": "L Eduardo Cardozo",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "browser-sync": "^2.26.7",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-terser": "^1.2.0"
+  }
+}

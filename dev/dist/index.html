@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3 | Design e performance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container justify-space-between">
+            <div class="container-logo">
+                <img src="imgs/logo-m3.png" alt="">
+            </div>
+            <div class="cart-icon">
+                <img class="shop-bag-img" src="imgs/shop-bag.png">
+                <div class="iten-counter" id="cart-itens-countr">0</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="body">
+        <div class="aside">
+            <div class="container-filters">
+                <div class="mb-40">
+                    <h2>Blusas</h2>
+                </div>
+                <div class="filters-container mb-40">
+                    <h3>CORES</h3>
+                    <ul>
+                        <li class="filter-item"><input type="checkbox" class="checkbox custom-checkbox filter-cor btn-filter" value="Amarelo"/><label for="">Amarelo</label></li>
+                        <li class="filter-item"><input type="checkbox" class="checkbox custom-checkbox filter-cor btn-filter" value="Azul" /><label for="">Azul</label></li>
+                        <li class="filter-item"><input type="checkbox" class="checkbox custom-checkbox filter-cor btn-filter" value="Branco" /><label for="">Branco</label></li>
+                        <li class="filter-item"><input type="checkbox" class="checkbox custom-checkbox filter-cor btn-filter" value="Laranja" /><label for="">Laranja</label></li>
+                        <li class="filter-item"><input type="checkbox" class="checkbox custom-checkbox filter-cor btn-filter" value="Cinza" /><label for="">Cinza</label></li>
+                        <li class="filter-item"><input type="checkbox" class="checkbox custom-checkbox filter-cor btn-filter" value="verde" /><label for="">Verde</label></li>
+                        <li class="filter-item"><input type="checkbox" class="checkbox custom-checkbox filter-cor btn-filter" value="Vermelho" /><label for="">Vermelho</label></li>
+                    </ul>
+                    <a href="">Veja todas as cores</a>
+                </div>
+                <div class="filters-container mb-40">
+                    <h3>TAMANHOS</h3>
+                    <ul class="container-filter-tam">
+                        <li class="item-filter-tam filter-tam btn-filter"><button>P</button></li>
+                        <li class="item-filter-tam filter-tam btn-filter"><button>M</button></li>
+                        <li class="item-filter-tam filter-tam btn-filter"><button>G</button></li>
+                        <li class="item-filter-tam filter-tam btn-filter"><button>GG</button></li>
+                        <li class="item-filter-tam filter-tam btn-filter"><button>U</button></li>
+                        <li class="item-filter-tam filter-tam btn-filter"><button>36</button></li>
+                        <li class="item-filter-tam filter-tam btn-filter"><button>38</button></li>
+                        <li class="item-filter-tam filter-tam btn-filter"><button>40</button></li>
+                        <li class="item-filter-tam filter-tam btn-filter"><button>42</button></li>
+                        <li class="item-filter-tam filter-tam btn-filter"><button>44</button></li>
+                        <li class="item-filter-tam filter-tam btn-filter"><button>46</button></li>
+                    </ul>
+                </div>
+                <div class="filters-container mb-40">
+                    <h3>FAIXA DE PREÇOS</h3>
+                    <ul>
+                        <li><input class="item-filter-precos mb-15 filter-price btn-filter" type="checkbox" value="0,50"><label for="">De R$0 até R$50,00</label></li>
+                        <li><input class="item-filter-precos mb-15 filter-price btn-filter" type="checkbox" value="51,150"><label for="">De R$51 até R$150,00</label></li>
+                        <li><input class="item-filter-precos mb-15 filter-price btn-filter" type="checkbox" value="151,300"><label for="">De R$151 até R$300,00</label></li>
+                        <li><input class="item-filter-precos mb-15 filter-price btn-filter" type="checkbox" value="301,500"><label for="">De R$301 até R$500,00</label></li>
+                        <li><input class="item-filter-precos mb-15 filter-price btn-filter" type="checkbox" value="500"><label for="">A partir de R$501,00</label></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-main">
+
+            <div class="cart" style="display:none;">
+                <h2 class="text-uppercase text-center">carrinho de compras</h2>
+                <div class="cart-container">
+
+                </div>
+                <div class="container row justify-space-between p-2">
+                    <div class="container row">
+                        <p class="my-auto">Preço total: R$</p>
+                        <p id="cart-total-price" class="my-auto">0</p>
+                    </div>
+                    <div>
+                        <button class="btn-cart-buy">Comprar</button>
+                        <button class="btn-cart-cancel" id="btn-cart-cancel">Cancelar</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <nav class="hide-menu">
+                <h1 class="title-categoria">Blusas</h1>
+                <div class="container-hide-menu">
+                    <div id="btn-hide-menu-filtrar" class="container-hide-menu-celula">
+                        <h2>Filtrar</h2>
+                    </div>
+                    <div id="btn-hide-menu-ordenar" class="container-hide-menu-celula">
+                        <h2>Ordenar</h2>
+                    </div>
+                </div>
+                <div id="container-hide-menu-filtrar" class="container-hide-menu-filtrar" style="display:none" >
+                    <ul>
+                        <li>
+                            <div>
+                                <div class="container flex row justify-space-between">
+                                    <h2>Cores</h2>
+                                    <p id="btn-hide-subcat-color">+</p>
+                                </div>
+                                <div class="container-hide-cor hide-category" style="display:none">
+                                    <ul>
+                                        <li value="branco" class="btn-subcategory subcategory-color">Branco</li>
+                                        <li value="azul" class="btn-subcategory subcategory-color">Azul</li>
+                                        <li value="laranja" class="btn-subcategory subcategory-color">Laranja</li>
+                                        <li value="cinza" class="btn-subcategory subcategory-color">Cinza</li>
+                                        <li value="verde" class="btn-subcategory subcategory-color">Verde</li>
+                                        <li value="vermelho" class="btn-subcategory subcategory-color">Vermelho</li>
+                                        <li value="amarelo" class="btn-subcategory subcategory-color">Amarelo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="container flex row justify-space-between">
+                                    <h2>Tamanhos</h2>
+                                    <p id="btn-hide-subcat-tam">+</p>
+                                </div>
+                                <div class="container-hide-tam hide-category" style="display:none">
+                                    <ul>
+                                        <li value="p"  class="btn-subcategory subcategory-tam">P</li>
+                                        <li value="m"  class="btn-subcategory subcategory-tam">M</li>
+                                        <li value="g"  class="btn-subcategory subcategory-tam">G</li>
+                                        <li value="gg" class="btn-subcategory subcategory-tam">GG</li>
+                                        <li value="u"  class="btn-subcategory subcategory-tam">U</li>
+                                        <li value="36" class="btn-subcategory subcategory-tam">36</li>
+                                        <li value="38" class="btn-subcategory subcategory-tam">38</li>
+                                        <li value="40" class="btn-subcategory subcategory-tam">40</li>
+                                        <li value="42" class="btn-subcategory subcategory-tam">42</li>
+                                        <li value="44" class="btn-subcategory subcategory-tam">44</li>
+                                        <li value="46" class="btn-subcategory subcategory-tam">46</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="container flex row justify-space-between">
+                                    <h2>Faixa de preços</h2>
+                                    <p id="btn-hide-subcat-price">+</p>
+                                </div>
+                                <div class="container-hide-price hide-category" style="display:none">
+                                    <ul>
+                                        <li value="0,50"    class="btn-subcategory subcategory-price">De R$0 até R$50,00</li>
+                                        <li value="51,150"  class="btn-subcategory subcategory-price">De R$51 até R$150,00</li>
+                                        <li value="151,300" class="btn-subcategory subcategory-price">De R$151 até R$300,00</li>
+                                        <li value="301,500" class="btn-subcategory subcategory-price">De R$301 até R$500,00</li>
+                                        <li value="501"     class="btn-subcategory subcategory-price">A partir de R$501,00</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="container-hide-menu-ordenar" class="container-hide-menu-filtrar" style="display:none">
+                    <ul>
+                        <li><h1>Ordenar por</h1></li>
+                        <li class="hidemenu-option-sort" id="byId" value="byId">Mais recentes</li>
+                        <li class="hidemenu-option-sort" id="byPriceReverse" value="byPriceReverse">Menor preço</li>
+                        <li class="hidemenu-option-sort" id="byPrice" value="byPrice">Maior preço</li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="btn-hide-menu-ordenar" class="container-ordenar">
+                <select id="select-sort" type="opt" default="Filtrar por">
+                    <option value="" disabled selected>Ordenar por: </option>
+                    <option value="byId">Mais recente</option>
+                    <option value="byPrice">Maior preço</option>
+                    <option value="byPriceReverse">Menor preço</option>
+                </select>
+            </div>
+            <div class="container-produtos">
+                <!-- Products cards -->
+            </div>
+      </div>
+    </div>
+
+
+    <footer class="footer">
+        <div>
+            <p>Agência M3 - Agência de performance digital</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./scripts/lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./scripts/json/products_json.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>

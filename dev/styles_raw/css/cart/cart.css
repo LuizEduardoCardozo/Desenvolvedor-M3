@@ -1,0 +1,22 @@
+.cart { 
+    background-color: white;
+    width: 50%;
+    border: 1px solid black;
+    position: absolute;
+    right: 11%;
+    top: 67px;
+}
+.cart h2 {
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.cart-product {
+    padding: 1rem;
+}
+.cart-product img {
+    height: 150px;
+}
+.cart-product p {
+    margin-top: auto;
+    margin-bottom: auto;
+}

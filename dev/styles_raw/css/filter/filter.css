@@ -1,0 +1,40 @@
+.filter-item {
+    display: flex;
+    padding-bottom: 0.5rem;
+}
+
+.item-filter-tam {
+    color: black;
+    margin: 5px;
+}
+
+.item-filter-tam button {
+    width: 2.5rem;
+    height:2.5rem;
+	box-shadow:inset 0px -50px 0px 0px white;
+	background-color:white;
+	border:2px solid #dcdcdc;
+	cursor:pointer;
+	color:#666666;
+	font-size:15px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.item-filter-tam button:focus  {
+    box-shadow:inset 0px -50px 0px 0px white;
+	background:linear-gradient(to bottom, white 5%, white 100%);
+    background-color:white;
+    border:2px solid white;
+}
+
+.btn-selected {
+    box-shadow:inset 0px -50px 0px 0px white;
+	background:linear-gradient(to bottom, white 5%, #f6f6f6 100%);
+	background-color:white;
+	border:2px solid #00c4ff;
+}
+
+.item-filter-tam-selected {
+    border-color: blue;
+}

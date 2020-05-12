@@ -1,0 +1,26 @@
+.container-produtos {
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   width: 95%;
+}
+
+.card-produto {
+    width: 225px;
+    text-align: center;
+    padding: 1rem;
+    padding-left: 3rem;
+}
+
+.card-produto img {
+    width: 225px;
+}
+
+.card-produto h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.card-produto p {
+    font-size: 0.8rem;
+}
