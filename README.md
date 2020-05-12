@@ -1,4 +1,4 @@
-# Projeto do teste tecnico
+# Projeto do teste técnico
 
 - Dentro da pasta dev se encontram todos os códigos da aplicação
 - A pasta "dist" conterá o index.html e servirá para receber os códigos após serem tratados pelo gulp.
